@@ -1,55 +1,9 @@
 {
-  "_static": {
-    "generator": {
-      "name": "@globus/static-search-portal"
-    }
+  "index": {
+    "uuid": "55b8cb1b-e089-4802-bf3e-cc7625e93b5d",
+    "name": "55b8cb1b-e089-4802-bf3e-cc7625e93b5d"
   },
-  "data": {
-    "version": "1.0.0",
-    "attributes": {
-      "metadata": {
-        "title": "Search | Globus Search Portal"
-      },
-      "content": {
-        "headline": "Globus Search Portal"
-      },
-      "features": {
-        "transfer": false
-      },
-      "components": {
-        "Result": {
-          "heading": "entries[0].content.name",
-          "fields": [
-            {
-              "label": "Tags",
-              "property": "entries[0].content.tags"
-            },
-            {
-              "label": "Region",
-              "property": "entries[0].content.region"
-            }
-          ]
-        }
-      },
-      "globus": {
-        "search": {
-          "index": "78b92aca-e361-4307-8f66-bc448f20e2c3",
-          "facets": [
-            {
-              "name": "Tags",
-              "field_name": "tags",
-              "type": "terms",
-              "size": 10
-            },
-            {
-              "name": "Region",
-              "field_name": "region",
-              "type": "terms",
-              "size": 10
-            }
-          ]
-        }
-      }
-    }
+  "branding": {
+    "title": "Test SPAwn"
   }
 }
