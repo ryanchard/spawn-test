@@ -1,9 +1,55 @@
 {
-  "index": {
-    "uuid": "55b8cb1b-e089-4802-bf3e-cc7625e93b5d",
-    "name": "55b8cb1b-e089-4802-bf3e-cc7625e93b5d"
+  "_static": {
+    "generator": {
+      "name": "@globus/static-search-portal"
+    }
   },
-  "branding": {
-    "title": "Test SPAwn"
+  "data": {
+    "version": "1.0.0",
+    "attributes": {
+      "metadata": {
+        "title": "Test SPAwn"
+      },
+      "content": {
+        "headline": "Test SPAwn"
+      },
+      "features": {
+        "transfer": false
+      },
+      "components": {
+        "Result": {
+          "heading": "entries[0].content.name",
+          "fields": [
+            {
+              "label": "Tags",
+              "property": "entries[0].content.tags"
+            },
+            {
+              "label": "Region",
+              "property": "entries[0].content.region"
+            }
+          ]
+        }
+      },
+      "globus": {
+        "search": {
+          "index": "55b8cb1b-e089-4802-bf3e-cc7625e93b5d",
+          "facets": [
+            {
+              "name": "Tags",
+              "field_name": "tags",
+              "type": "terms",
+              "size": 10
+            },
+            {
+              "name": "Region",
+              "field_name": "region",
+              "type": "terms",
+              "size": 10
+            }
+          ]
+        }
+      }
+    }
   }
 }
