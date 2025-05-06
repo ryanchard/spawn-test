@@ -18,15 +18,27 @@
       },
       "components": {
         "Result": {
-          "heading": "entries[0].content.name",
+          "heading": "subject",
           "fields": [
             {
-              "label": "Tags",
-              "property": "entries[0].content.tags"
+              "label": "Preview",
+              "property": "entries[0].content.content_preview"
             },
             {
-              "label": "Region",
-              "property": "entries[0].content.region"
+              "label": "Word Count",
+              "property": "entries[0].content.word_count"
+            },
+            {
+              "label": "Char Count",
+              "property": "entries[0].content.char_count"
+            },
+            {
+              "label": "language",
+              "property": "entries[0].content.language"
+            },
+            {
+              "label": "Keywords",
+              "property": "entries[0].content.keywords"
             }
           ]
         }
@@ -36,14 +48,8 @@
           "index": "55b8cb1b-e089-4802-bf3e-cc7625e93b5d",
           "facets": [
             {
-              "name": "Tags",
-              "field_name": "tags",
-              "type": "terms",
-              "size": 10
-            },
-            {
-              "name": "Region",
-              "field_name": "region",
+              "name": "Keywords",
+              "field_name": "keywords",
               "type": "terms",
               "size": 10
             }
